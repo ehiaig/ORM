@@ -1,0 +1,16 @@
+ORM - A way to easily convertng data form a relational form to an Object form
+peewee: an ORM for Python. When you use peewee, you get an object from the database
+
+TO KNOW/GENERATE TABLE STRUCTURE FROM A GIVEN DATABASE
+1. Navigate to your project folder at you command prompt
+
+2. Launch the .env using "source .env/bin/activate"
+    - If no virtual environment in that folcer, creat one "virtualenv .env"
+
+3. Install peewee using "sudo pip3 install peewee"
+    - peewee has a module call pwiz this does the model generation
+
+4. sudo -u postgres `which python` -m pwiz -e postgresql dvdrental > dvdrentalmodels.py
+    - which python: tells it to locate the python that particular project is running
+    - dvdrental is the database name
+    - dvdrentalmodels.py is the filename we want it to put al the models it has created.
